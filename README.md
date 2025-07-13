@@ -4,6 +4,40 @@ This repository provides example code templates and sample solutions for ATmega-
 It is intended for use with automated lab submission plugins and manual student practice in microcontroller programming courses.
 
 ---
+## Features
+
+- **Submission Rules**
+  - Only one PDF and one ZIP file per submission.
+  - Both filenames must match the required pattern:<br>
+    `LabX_studentID_semester.pdf` and `LabX_studentID_semester.zip`.
+
+- **File Type and Size Validation**
+  - Only `.pdf` and `.zip` files are accepted (max 1MB each).
+  - ZIP archives are checked for forbidden files (such as `.exe`, scripts, and nested ZIPs).
+
+- **ZIP Structure Checks**
+  - **Each folder containing `.c` or `.h` source files must also contain at least one `.hex` file.**
+    - Folders missing a `.hex` file trigger a clear error message:<br>
+      <code>Folder &lt;folder&gt; contains no hex file. Please recompile or amend your submission.</code>
+
+- **.hex File Verification**
+  - Enforces a minimum number of `.hex` files per assignment (configurable).
+  - Checks for empty `.hex` files.
+  - Detects "uncompiled" `.hex` files (containing placeholder content).
+  - Verifies that the student ID is present (in ASCII hex) inside each `.hex` file.
+
+- **Timestamp Comparison**
+  - Flags if `.c` or `.h` source files are newer than corresponding `.hex` files, indicating missing re-compilation.
+
+- **Teacher-Only Flags**
+  - Student ID mismatches and potential cheating are flagged and visible only to teachers.
+
+- **Clear, Color-Coded Error Messages**
+  - All feedback is displayed to students with clear explanations and color highlights for easy correction.
+
+---
+
+_This plugin streamlines ATmega lab submissions, automates checks, and improves feedback for both students and instructors._
 
 ## Folder Structure
 
