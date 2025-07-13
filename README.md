@@ -7,34 +7,30 @@ It is intended for use with automated lab submission plugins and manual student 
 
 ## Folder Structure
 
+```
 /
-├── Task1/ # Example: Turn on Red LED on button press
-│ ├── main.c
-│ ├── init.c
-│ ├── init.h
-│ └── Makefile
+├── atmegacode/               # Moodle plugin code
+│   ├── lang/en
+│      └── assignsubmission_atmegacode.php
+│   ├── db
+│      └── upgrade.php
+│      └── install.xml
+│      └── access.php
+│   ├── version.php
+│   ├── settings.php
+│   ├── lib.php
+│   ├── locallib.php
+│   ├── Readme.md
+├── examples/Led_tasks # Test files for ATmegacode submission plugin
+│   ├── Task1    #Test case: .c source file is newer then compiled .hex file
+│   ├── Task2    #Test case: .hex file is missing in the folder
 │
-├── Task2/ # Example: Toggle Red LED on each button press
-│ ├── main.c
-│ ├── init.c
-│ ├── init.h
-│ └── Makefile
-│
-├── sample_solutions/ # Sample solutions for demonstration
-│ ├── Task1/ # (correct code, not compiled, no .hex files)
-│ │ ├── main.c
-│ │ ├── init.c
-│ │ ├── init.h
-│ │ └── Makefile
-│ └── Task2/
-│ ├── main.c
-│ ├── init.c
-│ ├── init.h
-│ └── Makefile
+├── sample_output/ # Pre-check output warnings from Led_tasks files tested
+│ └── Precheck_output.png # Snapshot of plugin check of test files. Warnings are showed.
+│ └──Led_tasks    # correct folder without errors.
 │
 └── README.md
-
----
+```
 
 ## How to Use
 
@@ -43,16 +39,6 @@ It is intended for use with automated lab submission plugins and manual student 
 - **Sample Solutions:**  
   The `sample_solutions/` folder contains correct code for reference or plugin demonstration.  
   These solutions are provided as source only, without compiled `.hex` files.
-
----
-
-## Example Tasks
-
-- **Task 1:**  
-  Turn on the Red LED (PB1) while a button on PD2 is pressed.
-
-- **Task 2:**  
-  Toggle the Red LED (PB1) on each press of the button on PD2.
 
 ---
 
