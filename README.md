@@ -1,7 +1,6 @@
 # ATmega Code Templates and Lab Solutions
 
-This repository provides example code templates and sample solutions for ATmega-based lab exercises.  
-It is intended for use with automated lab submission plugins and manual student practice in microcontroller programming courses.
+This repository provides example code templates and sample solutions for ATmega-based lab exercises, intended for use with automated lab submission plugins or manual student practice in microcontroller programming courses. It also includes a Moodle plugin for ATmega microcontroller lab submissions that checks file naming conventions and ensures all required .hex files are included in the submission.
 
 ---
 ## Features
