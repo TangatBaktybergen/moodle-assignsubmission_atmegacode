@@ -49,6 +49,13 @@ _This plugin streamlines ATmega lab submissions, automates checks, and improves 
 │      └── upgrade.php
 │      └── install.xml
 │      └── access.php
+│   ├── backup
+│      ├── moodle2
+│         └── restore_assignsubmission_atmegacode_subplugin.class.php
+│         └── backup_assignsubmission_atmegacode_subplugin.class.php
+│   ├── classes
+│      ├── privacy
+│         └── provider
 │   ├── version.php
 │   ├── settings.php
 │   ├── lib.php
