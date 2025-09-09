@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'assignsubmission_atmegacode';
-$plugin->version   = 2025082900;
+$plugin->version   = 2025090800;
 $plugin->requires  = 2022041900;
 $plugin->maturity  = MATURITY_STABLE;
 $plugin->cron      = 0;
