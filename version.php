@@ -30,7 +30,7 @@ $plugin->version   = 2025090800;
 $plugin->requires  = 2022041900;
 $plugin->maturity  = MATURITY_STABLE;
 $plugin->cron      = 0;
-$plugin->release = 'v1.0';
+$plugin->release = 'v1.1';
 
 // Optional hidden credit line.
 $plugin->description = 'ATmegacode plugin for Moodle. Developed by Ivan Volosyak and Tangat Baktybergen, 2025.';
