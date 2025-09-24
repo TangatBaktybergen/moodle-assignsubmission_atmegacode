@@ -52,7 +52,7 @@ function xmldb_assignsubmission_atmegacode_upgrade($oldversion) {
         }
 
         // Savepoint.
-        upgrade_plugin_savepoint(true, 2025061402, 'assignsubmission', 'atmegacode');
+        upgrade_plugin_savepoint(true, 2025090900, 'assignsubmission', 'atmegacode');
     }
 
     return true;
